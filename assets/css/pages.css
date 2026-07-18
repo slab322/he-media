@@ -1,0 +1,245 @@
+/* ==========================================================================
+   pages.css
+   ページ固有のレイアウト(ホーム / イベント / お店 / メディア / その他 / 詳細)
+   ========================================================================== */
+
+/* ---------- 共通ページタイトル ---------- */
+.page-title {
+  padding: var(--space-md);
+  font-size: 20px;
+  font-weight: 700;
+}
+
+/* ---------- ホーム: メインビジュアル ---------- */
+.hero-card {
+  margin: 0 var(--space-md) var(--space-lg);
+  border-radius: var(--radius-large);
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+}
+
+.hero-card .placeholder-image {
+  border-radius: 0;
+}
+
+.hero-card__body {
+  padding: var(--space-lg);
+  background: var(--color-surface);
+}
+
+.hero-card__title {
+  font-size: 19px;
+  font-weight: 700;
+  margin: var(--space-sm) 0;
+}
+
+.hero-card__desc {
+  font-size: 13px;
+  color: var(--color-text-sub);
+  margin-bottom: var(--space-md);
+}
+
+/* ---------- ホーム: 空データの案内文 ---------- */
+.section__note {
+  padding: 0 var(--space-md);
+  margin-top: var(--space-sm);
+  font-size: 12px;
+  color: var(--color-text-sub);
+}
+
+/* ---------- ホーム: 協力店・スポンサー ---------- */
+.sponsor-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-md);
+  padding: 0 var(--space-md);
+}
+
+@media (min-width: 1024px) {
+  .sponsor-grid { grid-template-columns: repeat(6, 1fr); }
+}
+
+.sponsor-tile {
+  aspect-ratio: 1 / 1;
+  border-radius: var(--radius-medium);
+}
+
+/* ---------- ホーム: 運営フッター ---------- */
+.site-footer {
+  padding: var(--space-xl) var(--space-md);
+  border-top: 1px solid var(--color-border);
+  margin-top: var(--space-lg);
+  font-size: 12px;
+  color: var(--color-text-sub);
+  text-align: center;
+}
+
+.site-footer a {
+  color: var(--color-primary-dark);
+  font-weight: 600;
+}
+
+/* ---------- お店: 2列グリッド用の店舗カード ---------- */
+.shops-grid .shop-card {
+  width: auto;
+}
+
+/* ---------- その他画面: メニューリスト ---------- */
+.menu-list {
+  padding: 0 var(--space-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.menu-card {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  padding: var(--space-md);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-medium);
+  min-height: 44px;
+}
+
+.menu-card__icon {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: var(--radius-medium);
+  background: var(--color-primary-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-primary-dark);
+}
+
+.menu-card__icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+.menu-card__label {
+  flex: 1;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.menu-card__chevron {
+  width: 18px;
+  height: 18px;
+  color: var(--color-text-sub);
+  flex-shrink: 0;
+}
+
+@media (min-width: 600px) {
+  .menu-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .menu-list { grid-template-columns: repeat(3, 1fr); }
+}
+
+/* 地域マップ枠(将来 Google Maps 等を導入する枠のみ) */
+.map-frame {
+  margin: 0 var(--space-md) var(--space-lg);
+  border-radius: var(--radius-large);
+  border: 1px dashed var(--color-border);
+  aspect-ratio: 16 / 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: var(--space-xs);
+  /* 背景がテーマに関わらず常に明るいクリーム色のため、文字色も固定する */
+  color: #8A5A2E;
+  font-size: 13px;
+  background: var(--color-primary-light);
+}
+
+/* ---------- 詳細ページ共通テンプレート ---------- */
+.detail-hero {
+  border-radius: 0;
+  aspect-ratio: 16 / 10;
+}
+
+.detail-body {
+  padding: var(--space-lg) var(--space-md);
+}
+
+.detail-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin: var(--space-sm) 0;
+}
+
+.detail-lead {
+  font-size: 13px;
+  color: var(--color-text-sub);
+  margin-bottom: var(--space-md);
+}
+
+.detail-meta-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+  padding: var(--space-md);
+  background: var(--color-primary-light);
+  border-radius: var(--radius-medium);
+  margin-bottom: var(--space-lg);
+  /* 背景がテーマに関わらず常に明るいクリーム色のため、文字色も固定する */
+  color: #2A1500;
+}
+
+.detail-meta-list li {
+  font-size: 13px;
+  display: flex;
+  gap: var(--space-sm);
+}
+
+.detail-meta-list li span:first-child {
+  color: var(--color-primary-dark);
+  flex-shrink: 0;
+  width: 5em;
+}
+
+.detail-section {
+  margin-bottom: var(--space-lg);
+}
+
+.detail-section h2 {
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: var(--space-sm);
+}
+
+.share-row {
+  display: flex;
+  gap: var(--space-sm);
+  margin-top: var(--space-lg);
+}
+
+/* PCでは詳細ページも幅を制限して中央寄せ */
+@media (min-width: 1024px) {
+  .detail-body,
+  .page-title,
+  .filter-bar,
+  .filter-chips,
+  .tabs,
+  .section-header,
+  .card-grid,
+  .menu-list,
+  .hero-card,
+  .map-frame,
+  .sponsor-grid {
+    max-width: var(--content-max-width);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .detail-hero { border-radius: var(--radius-large); }
+}

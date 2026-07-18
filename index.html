@@ -2,9 +2,267 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
-<title>H.E. Media</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>H.E. MEDIA｜地域のイベント・お店・情報が集まる地域メディア</title>
+<meta name="description" content="地域のイベント、お店、ニュース、動画などを発信する株式会社H.E.運営の地域メディアです。">
+<meta name="theme-color" content="#FFA965">
+<link rel="canonical" href="https://media.he-company.com/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="H.E. MEDIA｜地域のイベント・お店・情報が集まる地域メディア">
+<meta property="og:description" content="地域のイベント、お店、ニュース、動画などを発信する株式会社H.E.運営の地域メディアです。">
+<meta property="og:url" content="https://media.he-company.com/">
+<meta property="og:image" content="https://media.he-company.com/assets/icons/icon-512.png">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="/assets/icons/icon-192.png">
+<link rel="apple-touch-icon" href="/assets/icons/icon-192.png">
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="stylesheet" href="/assets/css/base.css">
+<link rel="stylesheet" href="/assets/css/components.css">
+<link rel="stylesheet" href="/assets/css/pages.css">
 </head>
-<body>
-<h1>H.E. Media</h1>
+<body data-page="home">
+
+<header class="app-header">
+  <div class="app-header__left">
+    <a href="/" class="app-header__logo tap-target" aria-label="H.E. MEDIA ホーム">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l9-7 9 7"/><path d="M5 10v9h5v-6h4v6h5v-9"/></svg>
+    </a>
+    <span class="app-header__title">H.E. MEDIA</span>
+  </div>
+  <div class="app-header__right">
+    <button type="button" class="icon-btn" data-search-open aria-label="検索">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+    </button>
+    <button type="button" class="icon-btn" data-coming-soon="通知機能は準備中です" aria-label="通知">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.7 21a2 2 0 0 1-3.4 0"/></svg>
+    </button>
+  </div>
+</header>
+
+<main class="app-main">
+
+  <!-- 期間タブ -->
+  <div class="tabs" data-period-tabs data-tabs role="tablist" aria-label="表示期間">
+    <button type="button" class="tab is-active" data-tab-value="today" role="tab" aria-selected="true">今日</button>
+    <button type="button" class="tab" data-tab-value="tomorrow" role="tab" aria-selected="false">明日</button>
+    <button type="button" class="tab" data-tab-value="week" role="tab" aria-selected="false">今週</button>
+    <button type="button" class="tab" data-tab-value="month" role="tab" aria-selected="false">今月</button>
+  </div>
+
+  <!-- メインビジュアル -->
+  <section class="hero-card card">
+    <div class="placeholder-image ratio-4-3"></div>
+    <div class="hero-card__body">
+      <span class="badge">地域メディア</span>
+      <h2 class="hero-card__title">地域の新しい情報をお届けします</h2>
+      <p class="hero-card__desc">イベント、お店、ニュースなどの地域情報を順次掲載します。</p>
+      <button type="button" class="btn btn-primary btn-block" data-coming-soon="詳細ページは準備中です">詳細を見る</button>
+    </div>
+  </section>
+
+  <!-- 注目イベント -->
+  <section class="section" aria-labelledby="home-events-heading">
+    <div class="section-header">
+      <h2 class="section-header__title" id="home-events-heading">注目イベント</h2>
+      <a href="/events/" class="section-header__link">すべて見る</a>
+    </div>
+    <div class="scroll-row">
+      <button type="button" class="card event-card" data-coming-soon="イベント詳細は準備中です">
+        <div class="placeholder-image ratio-4-3"></div>
+        <div class="card__body">
+          <span class="card__category">イベント</span>
+          <h3 class="card__title">イベント情報準備中</h3>
+          <p class="card__meta">開催情報を順次掲載します</p>
+        </div>
+      </button>
+      <button type="button" class="card event-card" data-coming-soon="イベント詳細は準備中です">
+        <div class="placeholder-image ratio-4-3"></div>
+        <div class="card__body">
+          <span class="card__category">イベント</span>
+          <h3 class="card__title">イベント情報準備中</h3>
+          <p class="card__meta">開催情報を順次掲載します</p>
+        </div>
+      </button>
+      <button type="button" class="card event-card" data-coming-soon="イベント詳細は準備中です">
+        <div class="placeholder-image ratio-4-3"></div>
+        <div class="card__body">
+          <span class="card__category">イベント</span>
+          <h3 class="card__title">イベント情報準備中</h3>
+          <p class="card__meta">開催情報を順次掲載します</p>
+        </div>
+      </button>
+    </div>
+    <p class="section__note">現在情報を準備しています。</p>
+  </section>
+
+  <!-- おすすめのお店 -->
+  <section class="section" aria-labelledby="home-shops-heading">
+    <div class="section-header">
+      <h2 class="section-header__title" id="home-shops-heading">おすすめのお店</h2>
+      <a href="/shops/" class="section-header__link">すべて見る</a>
+    </div>
+    <div class="scroll-row">
+      <article class="card shop-card">
+        <button type="button" class="shop-card__hit" data-coming-soon="店舗詳細は準備中です" aria-label="店舗情報準備中の詳細">
+          <div class="placeholder-image ratio-1-1"></div>
+          <div class="card__body">
+            <span class="card__category">グルメ</span>
+            <h3 class="card__title">店舗情報準備中</h3>
+            <p class="card__sub">紹介文は準備中です。</p>
+          </div>
+        </button>
+        <button type="button" class="favorite-btn" data-favorite-id="home-shop-1" aria-label="お気に入りに追加">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-4.35-9.5-8.5C1 9 2.5 5.5 6 5c2-.3 3.7.7 6 3 2.3-2.3 4-3.3 6-3 3.5.5 5 4 3.5 7.5C19 16.65 12 21 12 21z"/></svg>
+        </button>
+      </article>
+      <article class="card shop-card">
+        <button type="button" class="shop-card__hit" data-coming-soon="店舗詳細は準備中です" aria-label="店舗情報準備中の詳細">
+          <div class="placeholder-image ratio-1-1"></div>
+          <div class="card__body">
+            <span class="card__category">ショッピング</span>
+            <h3 class="card__title">店舗情報準備中</h3>
+            <p class="card__sub">紹介文は準備中です。</p>
+          </div>
+        </button>
+        <button type="button" class="favorite-btn" data-favorite-id="home-shop-2" aria-label="お気に入りに追加">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-4.35-9.5-8.5C1 9 2.5 5.5 6 5c2-.3 3.7.7 6 3 2.3-2.3 4-3.3 6-3 3.5.5 5 4 3.5 7.5C19 16.65 12 21 12 21z"/></svg>
+        </button>
+      </article>
+      <article class="card shop-card">
+        <button type="button" class="shop-card__hit" data-coming-soon="店舗詳細は準備中です" aria-label="店舗情報準備中の詳細">
+          <div class="placeholder-image ratio-1-1"></div>
+          <div class="card__body">
+            <span class="card__category">サービス</span>
+            <h3 class="card__title">店舗情報準備中</h3>
+            <p class="card__sub">紹介文は準備中です。</p>
+          </div>
+        </button>
+        <button type="button" class="favorite-btn" data-favorite-id="home-shop-3" aria-label="お気に入りに追加">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-4.35-9.5-8.5C1 9 2.5 5.5 6 5c2-.3 3.7.7 6 3 2.3-2.3 4-3.3 6-3 3.5.5 5 4 3.5 7.5C19 16.65 12 21 12 21z"/></svg>
+        </button>
+      </article>
+    </div>
+    <p class="section__note">現在情報を準備しています。</p>
+  </section>
+
+  <!-- 新着メディア -->
+  <section class="section" aria-labelledby="home-media-heading">
+    <div class="section-header">
+      <h2 class="section-header__title" id="home-media-heading">新着メディア</h2>
+      <a href="/media/" class="section-header__link">すべて見る</a>
+    </div>
+    <div class="scroll-row">
+      <button type="button" class="card media-card" data-coming-soon="コンテンツは準備中です">
+        <div class="placeholder-image ratio-9-16">
+          <span class="media-card__type">動画</span>
+          <span class="media-card__play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span>
+        </div>
+        <div class="card__body">
+          <h3 class="card__title">新着コンテンツ準備中</h3>
+          <p class="card__meta">投稿日：準備中</p>
+        </div>
+      </button>
+      <button type="button" class="card media-card" data-coming-soon="コンテンツは準備中です">
+        <div class="placeholder-image ratio-9-16">
+          <span class="media-card__type">記事</span>
+          <span class="media-card__play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span>
+        </div>
+        <div class="card__body">
+          <h3 class="card__title">新着コンテンツ準備中</h3>
+          <p class="card__meta">投稿日：準備中</p>
+        </div>
+      </button>
+      <button type="button" class="card media-card" data-coming-soon="コンテンツは準備中です">
+        <div class="placeholder-image ratio-9-16">
+          <span class="media-card__type">動画</span>
+          <span class="media-card__play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span>
+        </div>
+        <div class="card__body">
+          <h3 class="card__title">新着コンテンツ準備中</h3>
+          <p class="card__meta">投稿日：準備中</p>
+        </div>
+      </button>
+    </div>
+    <p class="section__note">現在情報を準備しています。</p>
+  </section>
+
+  <!-- 地域ニュース -->
+  <section class="section" aria-labelledby="home-news-heading">
+    <div class="section-header">
+      <h2 class="section-header__title" id="home-news-heading">地域ニュース</h2>
+      <a href="/media/" class="section-header__link">すべて見る</a>
+    </div>
+    <div data-news-list>
+      <div class="empty-state empty-state--inline">
+        <span class="empty-state__icon placeholder-image" aria-hidden="true"></span>
+        <p>地域ニュースを順次掲載します。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 協力店・スポンサー -->
+  <section class="section" aria-labelledby="home-sponsor-heading">
+    <div class="section-header">
+      <h2 class="section-header__title" id="home-sponsor-heading">協力店・スポンサー</h2>
+      <a href="/more/" class="section-header__link">詳しく見る</a>
+    </div>
+    <div class="sponsor-grid">
+      <div class="placeholder-image sponsor-tile" aria-hidden="true"></div>
+      <div class="placeholder-image sponsor-tile" aria-hidden="true"></div>
+      <div class="placeholder-image sponsor-tile" aria-hidden="true"></div>
+    </div>
+    <p class="section__note">協力店・スポンサー情報は準備中です。</p>
+  </section>
+
+  <!-- 運営情報 -->
+  <footer class="site-footer">
+    <p>運営：株式会社H.E.</p>
+    <p><a href="https://he-company.com" target="_blank" rel="noopener">会社サイトはこちら</a></p>
+  </footer>
+
+</main>
+
+<nav class="bottom-nav" aria-label="メインナビゲーション">
+  <a href="/" class="bottom-nav__item" data-nav-match="/" aria-label="ホーム">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l9-7 9 7"/><path d="M5 10v9h5v-6h4v6h5v-9"/></svg>
+    <span>ホーム</span>
+  </a>
+  <a href="/events/" class="bottom-nav__item" data-nav-match="/events/" aria-label="イベント">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18"/></svg>
+    <span>イベント</span>
+  </a>
+  <a href="/shops/" class="bottom-nav__item" data-nav-match="/shops/" aria-label="お店">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9l1-5h14l1 5"/><path d="M4 9a2 2 0 0 0 4 0 2 2 0 0 0 4 0 2 2 0 0 0 4 0 2 2 0 0 0 4 0"/><path d="M5 9v10h14V9"/></svg>
+    <span>お店</span>
+  </a>
+  <a href="/media/" class="bottom-nav__item" data-nav-match="/media/" aria-label="メディア">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M10 9l5 3-5 3z" fill="currentColor" stroke="none"/></svg>
+    <span>メディア</span>
+  </a>
+  <a href="/more/" class="bottom-nav__item" data-nav-match="/more/" aria-label="その他">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>
+    <span>その他</span>
+  </a>
+</nav>
+
+<div class="modal-overlay" data-search-modal aria-hidden="true">
+  <div class="modal" role="dialog" aria-modal="true" aria-label="検索">
+    <div class="modal__header">
+      <h2 class="modal__title">検索</h2>
+      <button type="button" class="icon-btn" data-search-close aria-label="閉じる">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+    <input type="text" class="modal__input" placeholder="イベント・お店・記事を検索" aria-label="検索キーワード">
+    <p class="modal__note">検索機能は現在準備中です。近日公開予定です。</p>
+  </div>
+</div>
+
+<div class="toast" data-toast role="status" aria-live="polite"></div>
+
+<script src="/assets/js/data.js"></script>
+<script src="/assets/js/ui.js"></script>
+<script src="/assets/js/app.js"></script>
 </body>
 </html>

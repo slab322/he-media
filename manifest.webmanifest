@@ -1,0 +1,25 @@
+{
+  "name": "H.E. MEDIA",
+  "short_name": "H.E. MEDIA",
+  "description": "地域のイベント・お店・情報が集まる地域メディア",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#FAFAF8",
+  "theme_color": "#FFA965",
+  "lang": "ja",
+  "icons": [
+    {
+      "src": "/assets/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/assets/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

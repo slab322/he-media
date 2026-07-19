@@ -4,6 +4,9 @@
    ========================================================================== */
 
 :root {
+  /* 常にライトモードの配色に固定する(OSのダークモード設定を無視する) */
+  color-scheme: light;
+
   /* カラー */
   --color-primary: #FFA965;
   --color-primary-dark: #F08C3C;
@@ -40,18 +43,6 @@
 
   /* フォント */
   --font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", system-ui, sans-serif;
-}
-
-/* ダークモードでも背景・文字色が破綻しないよう最低限のフォールバックのみ用意 */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-background: #161614;
-    --color-surface: #211F1C;
-    --color-text: #F3F1EC;
-    --color-text-sub: #A9A69F;
-    --color-border: #33312C;
-    --color-overlay: rgba(22, 22, 20, 0.86);
-  }
 }
 
 *,

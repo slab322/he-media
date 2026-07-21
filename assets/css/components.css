@@ -41,6 +41,16 @@
   color: var(--color-primary-dark);
 }
 
+.app-header__logo-link {
+  display: inline-flex;
+  align-items: center;
+}
+
+.app-header__logo-img {
+  height: 28px;
+  width: auto;
+}
+
 .icon-btn {
   width: 44px;
   height: 44px;
